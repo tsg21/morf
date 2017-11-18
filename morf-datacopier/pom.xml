@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.alfasoftware</groupId>
+		<artifactId>morf-parent</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>morf-datacopier</artifactId>
+	<name>morf-datacopier</name>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+	
+
+
+	<dependencies>
+	    <dependency>
+      <groupId>org.alfasoftware</groupId>
+      <artifactId>morf-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.alfasoftware</groupId>
+      <artifactId>morf-testsupport</artifactId>
+      <scope>test</scope>
+    </dependency>
+	
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+    </dependency>
+
+<!-- 	  <dependency> -->
+<!-- 		<groupId>org.eclipse.platform</groupId> -->
+<!-- 		<artifactId>org.eclipse.jface.text</artifactId> -->
+<!-- 	  </dependency> -->
+
+
+<!--  	  <dependency> -->
+<!-- 		<groupId>org.eclipse.swt</groupId> -->
+<!-- 		<artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId> -->
+<!-- 	  </dependency> -->
+
+		<dependency>
+			<groupId>org.eclipse.platform</groupId>
+			<artifactId>org.eclipse.jface</artifactId>
+      <scope>compile</scope>
+
+		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.eclipse.platform</groupId> -->
+<!-- 			<artifactId>org.eclipse.jface.text</artifactId> -->
+<!-- 			<version>3.12.0</version> -->
+<!-- 		</dependency> -->
+	</dependencies>
+</project>
